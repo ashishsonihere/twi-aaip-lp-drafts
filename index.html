@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>AAIP Landing Pages | Drafts | The Way Immigration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#870B0B;--red-dark:#6E0909;--blue:#6AABD9;--steel:#2C567B;--deep:#051C2A;--ink:#171717;--body:#484849;--tint:#F6FAFF;--line:#E3E3E3;--green:#1E7B34}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto',Arial,sans-serif;color:var(--body);line-height:1.65;background:#fff;font-size:16px}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--ink);line-height:1.3}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;padding:14px 0}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+header.site img.logo{height:54px;width:auto;display:block}
+.headright{display:flex;align-items:center;gap:22px}
+.phone{font-weight:500;color:var(--steel);text-decoration:none;font-size:17px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;text-decoration:none;border:none;border-radius:50px;padding:14px 32px;font-size:16px;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--red-dark)}
+.hero{background:linear-gradient(120deg,var(--deep) 0%,var(--steel) 100%);color:#fff;text-align:center;padding:88px 24px 76px}
+.hero .eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:13px;color:var(--blue);font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:16px}
+.hero h1{font-size:42px;color:#fff;font-weight:800;margin-bottom:20px}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:18px;color:rgba(255,255,255,.92);max-width:740px;margin:0 auto 16px}
+.hero .proof{font-size:15px;color:rgba(255,255,255,.72);margin-bottom:30px}
+.statsbar{background:var(--ink)}
+.statsbar .wrap{display:flex;flex-wrap:wrap}
+.stat{flex:1 1 200px;text-align:center;padding:26px 10px}
+.stat .num{display:block;font-family:'Montserrat',sans-serif;font-size:30px;font-weight:800;color:#fff}
+.stat .lbl{display:block;font-size:13px;text-transform:uppercase;letter-spacing:1.2px;color:var(--blue);margin-top:2px}
+section.block{padding:84px 0}
+section.block.tint{background:var(--tint)}
+.eyebrow2{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;color:var(--red);font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:10px}
+h2.sec{font-size:32px;font-weight:700;margin-bottom:16px}
+p.lead{max-width:880px;margin-bottom:14px}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:26px}
+.numbercard{background:#fff;border-radius:16px;padding:26px 20px;text-align:center;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+.numbercard .n{display:block;font-family:'Montserrat',sans-serif;font-size:30px;font-weight:800;color:var(--steel)}
+.numbercard .t{display:block;font-size:14px;margin-top:6px}
+.qual{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.qual .col{background:var(--tint);border-radius:16px;padding:30px}
+section.block.tint .qual .col{background:#fff;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+.qual h3{font-size:19px;margin-bottom:14px}
+.qual ul{list-style:none}
+.qual li{padding:8px 0 8px 32px;position:relative;font-size:15.5px}
+.qual li::before{position:absolute;left:0;top:8px;font-weight:700;font-size:17px}
+.qual .yes li::before{content:"✓";color:var(--steel)}
+.qual .no li::before{content:"✕";color:var(--red)}
+.glance{margin-top:30px;background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(5,28,42,.08);padding:10px 30px}
+.glance table{border-collapse:collapse;width:100%;font-size:15.5px}
+.glance th{font-family:'Montserrat',sans-serif;font-weight:600;color:var(--steel);text-align:left;padding:15px 14px 15px 0;width:32%;vertical-align:top}
+.glance td{padding:15px 0;border-bottom:1px solid var(--line)}
+.glance tr:last-child td{border-bottom:none}
+.glance tr.head td{font-family:'Montserrat',sans-serif;font-weight:700;color:var(--ink);font-size:17px;border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
+.card{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+section.block:not(.tint) .card{background:var(--tint);box-shadow:none}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{font-size:15.5px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.reason{background:var(--tint);border-radius:14px;padding:24px 28px;margin-bottom:14px}
+section.block.tint .reason{background:#fff;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+.reason h3{font-size:18px;color:var(--red-dark);margin-bottom:6px}
+.reason p{font-size:15.5px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.step{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+.step .num{display:inline-block;background:var(--red);color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;border-radius:50%;width:34px;height:34px;line-height:34px;text-align:center;margin-bottom:12px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{font-size:15.5px}
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:26px}
+.path .p{background:var(--steel);color:#fff;border-radius:16px;padding:28px}
+.path .p h3{font-size:17px;color:#fff;margin-bottom:8px}
+.path .p h3 span{color:var(--blue);display:block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.path .p p{font-size:14.5px;color:rgba(255,255,255,.9)}
+.band{color:#fff;background:linear-gradient(120deg,var(--steel),var(--deep));border-radius:20px;padding:40px;margin-top:30px}
+.band .head{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:700;line-height:1.35;margin-bottom:12px;color:#fff}
+.band .head span{color:var(--blue)}
+.band p{font-size:15.5px;margin-bottom:12px;color:rgba(255,255,255,.93)}
+.band p:last-child{margin-bottom:0}
+.band .fact{font-size:13px;color:rgba(255,255,255,.75);border-top:1px solid rgba(255,255,255,.25);padding-top:12px}
+.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.testi{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 28px rgba(5,28,42,.08)}
+.testi .stars{color:var(--red);font-size:15px;letter-spacing:3px;margin-bottom:12px}
+.testi p{font-size:15.5px;font-style:italic;margin-bottom:14px;color:var(--body)}
+.testi .who{font-family:'Montserrat',sans-serif;font-weight:700;color:var(--ink);font-size:14.5px}
+.testi .where{font-size:13px;color:rgba(72,72,73,.65)}
+.reqs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.reqs .col{background:var(--tint);border-radius:16px;padding:30px}
+.reqs h3{font-size:19px;margin-bottom:12px}
+.reqs ul{list-style:none}
+.reqs li{padding:7px 0 7px 28px;position:relative;font-size:15.5px}
+.reqs li::before{content:"✓";position:absolute;left:0;color:var(--steel);font-weight:700}
+.rcic{text-align:center;margin-top:36px}
+.rcic img{max-width:340px;width:100%;height:auto}
+.faq details{background:#fff;border-radius:14px;margin-bottom:12px;box-shadow:0 4px 18px rgba(5,28,42,.06);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:20px 52px 20px 24px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16.5px;color:var(--ink);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:700;color:var(--red)}
+.faq .body{padding:0 24px 22px;font-size:15.5px}
+.cta-lead{text-align:center;max-width:680px;margin:0 auto 8px}
+.cta-lead h2{font-size:30px;margin-bottom:10px}
+form.inquiry{background:#fff;border-radius:20px;box-shadow:0 10px 34px rgba(5,28,42,.1);padding:36px;margin-top:30px;max-width:860px;margin-left:auto;margin-right:auto}
+form.inquiry .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.inquiry label{display:block;font-size:14px;font-weight:500;margin-bottom:6px;color:var(--ink)}
+form.inquiry input,form.inquiry select,form.inquiry textarea{width:100%;padding:12px 14px;border:1px solid #DCDCDC;border-radius:10px;font-size:15.5px;font-family:'Roboto',Arial,sans-serif;background:#fff;color:var(--ink)}
+form.inquiry .full{grid-column:1/-1}
+form.inquiry .btn{margin-top:20px;width:100%;font-size:17px;padding:16px}
+footer.legal{background:var(--deep);color:rgba(255,255,255,.78);margin-top:0;padding:48px 0 110px;font-size:13.5px}
+footer.legal p{margin-bottom:10px;max-width:880px}
+footer.legal a{color:var(--blue);text-decoration:none}
+footer.legal .firmline{color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14.5px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -4px 18px rgba(5,28,42,.14)}
+.bar a{flex:1;display:block;text-align:center;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15.5px;padding:14px 8px;border-radius:50px}
+.bar .call{background:var(--red);color:#fff}
+.bar .wa{background:#1FA855;color:#fff}
+@media (max-width:900px){.numbers,.cards3,.path,.testis{grid-template-columns:1fr 1fr}.cards,.qual,.reqs{grid-template-columns:1fr}.steps{grid-template-columns:1fr}section.block{padding:60px 0}}
+@media (max-width:767px){.bar{display:flex}form.inquiry .grid{grid-template-columns:1fr}.hero h1{font-size:30px}.hero{padding:60px 20px 54px}.numbers,.cards3,.path,.testis{grid-template-columns:1fr}header.site img.logo{height:44px}form.inquiry{padding:26px 20px}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <img class="logo" src="https://irp.cdn-website.com/e64f567b/dms3rep/multi/opt/TWI+Logo-1920w.png" alt="The Way Immigration">
+    <div class="headright">
+      <a class="phone" href="tel:+14032656641">+1 403-265-6641</a>
+      <a class="btn" href="#inquiry-form">Check My Eligibility</a>
+    </div>
+  </div>
+</header>
+
+
+<section class="block"><div class="wrap">
+<div class="eyebrow2">Drafts For Review</div>
+<h2 class="sec">AAIP Landing Pages</h2>
+<p class="lead">Seven draft pages in the firm's brand system, rebuilt to the spousal sponsorship page pattern and verified against alberta.ca on 26 November 2026. Forms are visual drafts (action="#") until they are wired to the GHL form "AAIP | Landing Page Inquiry" at import.</p>
+<div class="reqs">
+  <div class="col"><h3>Worker Streams</h3><ul>
+    <li><a href="opportunity-stream.html">Alberta Opportunity Stream</a></li>
+    <li><a href="alberta-express-entry.html">Alberta Express Entry Stream</a></li>
+    <li><a href="rural-renewal.html">Rural Renewal Stream</a></li>
+    <li><a href="alberta-pnp.html">Alberta PNP (AAIP) General, With Stream Sorter</a></li>
+  </ul></div>
+  <div class="col"><h3>Entrepreneur Streams</h3><ul>
+    <li><a href="rural-entrepreneur.html">Rural Entrepreneur Stream (Includes Farm Stream)</a></li>
+    <li><a href="graduate-entrepreneur.html">Graduate Entrepreneur Stream</a></li>
+    <li><a href="foreign-graduate-entrepreneur.html">Foreign Graduate Entrepreneur Stream</a></li>
+  </ul></div>
+</div>
+</div></section>
+
+
+<footer class="legal">
+  <div class="wrap">
+    <p class="firmline">The Way Immigration | 2004 14 St NW Suite 201, Calgary, AB T2M 3N3 | <a href="tel:+14032656641">+1 403-265-6641</a> | info@thewayimmigration.ca</p>
+    <p>The Way Immigration is a private immigration consultancy. It is not part of, and is not affiliated with, the Government of Alberta, the Government of Canada or Immigration, Refugees and Citizenship Canada.</p>
+    <p>No immigration consultant can guarantee an invitation, a nomination or an approval. Selection decisions are made by the Alberta Advantage Immigration Program and by Immigration, Refugees and Citizenship Canada.</p>
+    <p>Program rules and figures on this page are drawn from alberta.ca and carry the date they were read. Program rules and allocations change without notice.</p>
+    <p>Submitting the inquiry form starts an eligibility review conversation. It does not start an application, and it does not guarantee a response time.</p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="call" href="tel:+14032656641">Call +1 403-265-6641</a>
+  <a class="wa" href="https://wa.me/14032656641" target="_blank" rel="noopener">WhatsApp Us</a>
+</div>
+
+</body>
+</html>
